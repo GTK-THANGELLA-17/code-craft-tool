@@ -1,33 +1,14 @@
 
 import { motion } from "framer-motion";
-import { LoaderCircle } from "lucide-react";
 
-interface LoadingSpinnerProps {
-  size?: number;
-  color?: string;
-  className?: string;
-  text?: string;
-}
-
-const LoadingSpinner = ({ 
-  size = 24, 
-  color = "currentColor", 
-  className = "",
-  text
-}: LoadingSpinnerProps) => {
+const LoadingSpinner = () => {
   return (
-    <div className={`flex flex-col items-center justify-center ${className}`}>
+    <div className="flex items-center justify-center">
       <motion.div
+        className="w-8 h-8 border-4 border-blue-200 border-t-blue-600 rounded-full"
         animate={{ rotate: 360 }}
-        transition={{ 
-          duration: 1.5, 
-          repeat: Infinity, 
-          ease: "linear" 
-        }}
-      >
-        <LoaderCircle size={size} color={color} />
-      </motion.div>
-      {text && <p className="mt-2 text-sm text-center text-slate-500 dark:text-slate-400">{text}</p>}
+        transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+      />
     </div>
   );
 };
