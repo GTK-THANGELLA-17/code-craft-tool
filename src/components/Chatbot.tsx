@@ -193,12 +193,12 @@ export const Chatbot = ({ forceOpen = false, onOpenChange }: ChatbotProps) => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: 20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            transition={{ duration: 0.3 }}
-            className="fixed bottom-20 right-4 z-50 w-80 sm:w-96 max-w-[calc(100vw-2rem)]"
-          >
+  initial={{ opacity: 0, y: 20, scale: 0.95 }}
+  animate={{ opacity: 1, y: 0, scale: 1 }}
+  exit={{ opacity: 0, y: 20, scale: 0.95 }}
+  transition={{ duration: 0.3 }}
+  className="fixed bottom-4 right-4 z-50 w-full max-w-sm sm:max-w-md max-h-[90vh] overflow-hidden"
+>
             <Card className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg border-slate-200/50 dark:border-slate-700/50 shadow-2xl">
               <div className="flex items-center justify-between p-4 border-b border-slate-200/50 dark:border-slate-700/50">
                 <div className="flex items-center gap-2">
