@@ -5,7 +5,6 @@
 
 **CodeCraft Toolkit** is a comprehensive suite of professional developer tools designed to enhance your coding workflow. Built with modern web technologies, it provides 7 powerful code manipulation tools that work entirely in your browser for maximum privacy and security.
 
-
 ## 🛠️ Available Tools
 
 ### 1. **Smart Code Divider** ✂️
@@ -110,7 +109,7 @@ Supports 20+ programming languages including:
 ## 🚀 Getting Started
 
 ### Quick Start
-
+1. Visit the [CodeCraft Toolkit]
 2. Choose your desired tool from the tabs
 3. Paste your code in the input area
 4. Click the process button
